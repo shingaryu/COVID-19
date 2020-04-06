@@ -1,25 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
+import { GraphComponent } from './graphComponent'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div>
+    <Navbar bg="light" expand="lg">
+      <Navbar.Brand href="#home">COVID-19 ItalFit</Navbar.Brand>
+    </Navbar>
+    <GraphComponent></GraphComponent>
+  </div>
   );
 }
 
