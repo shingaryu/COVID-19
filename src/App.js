@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Navbar, Nav, NavDropdown, Button } from "react-bootstrap";
-import { GraphComponent } from './graphComponent'
+import { TimeSeriesComponent } from './timeSeriesComponent';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
     <Navbar bg="light" expand="lg">
       <Navbar.Brand href="#home">COVID-19 ItalFit</Navbar.Brand>
     </Navbar>
-    <GraphComponent></GraphComponent>
+    <TimeSeriesComponent></TimeSeriesComponent>
   </div>
   );
 }
